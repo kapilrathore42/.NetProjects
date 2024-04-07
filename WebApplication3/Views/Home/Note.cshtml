@@ -1,0 +1,12 @@
+﻿@page
+@model WebApplication3.Views.Home.NoteModel
+@{
+}
+<form asp-action="AddNotes" method="post">
+    <div class="form-group">
+        <label for="Notes">Notes:</label>
+        <input for="Notes" name="Note" class="form-control" />
+        <button type="submit" class="btn btn-primary">Add Notes</button>
+        <a asp-controller="Home" asp-action="ViewNotes" class="btn btn-secondary">View Notes</a>
+    </div>
+</form>

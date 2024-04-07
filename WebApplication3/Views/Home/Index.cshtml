@@ -1,0 +1,95 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        /* Custom styles go here */
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .jumbotron {
+            background-color: #007bff;
+            color: #fff;
+            padding: 100px 0;
+        }
+
+        .jumbotron h1 {
+            font-size: 3rem;
+        }
+
+        .jumbotron p {
+            font-size: 1.5rem;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+
+        .feature-box {
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            margin-bottom: 20px; /* Added margin bottom for spacing between feature boxes */
+        }
+
+        .feature-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-box h3 {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron text-center">
+            <h1>Welcome to My Website</h1>
+            <p>A simple and elegant way to showcase your content.</p>
+        </div>
+
+        <div class="features">
+            <div class="feature-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVGHL9r9OucwArH8yO3rEDPryG4V3tSCBw-w&s" alt="Feature 1" class="img-fluid">
+                <h3>Feature 1</h3>
+                <p>Description of Feature 1.</p>
+            </div>
+            <div class="feature-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPfO37MK81JIyR1ptwqr_vYO3w4VR-iC2wqQ&s" alt="Feature 2" class="img-fluid">
+                <h3>Feature 2</h3>
+                <p>Description of Feature 2.</p>
+            </div>
+            <div class="feature-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkAhvc-YjdwsimlEYdOknxcvbgNOVSHWjkWQ&s" alt="Feature 3" class="img-fluid">
+                <h3>Feature 3</h3>
+                <p>Description of Feature 3.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

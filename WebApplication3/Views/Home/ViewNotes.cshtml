@@ -1,0 +1,29 @@
+﻿@model List<WebApplication3.Models.NoteModel>
+
+<h1>View Notes</h1>
+
+<form asp-action="SearchNotes" method="get">
+    <div class="form-group">
+        <label for="searchTerm">Search:</label>
+        <input type="text" id="searchTerm" name="searchTerm" class="form-control" />
+        <button type="submit" class="btn btn-primary">Search</button>
+    </div>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Notes</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var note in Model)
+        {
+            <tr>
+                <td>@note.Id</td>
+                <td>@note.Note</td>
+            </tr>
+        }
+    </tbody>
+</table>
